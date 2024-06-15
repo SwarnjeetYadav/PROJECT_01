@@ -14,12 +14,10 @@ body{
     width: 100%;
    
 }
-
-/* Navbar */
+/*Navbar*/
 #dark-mode-icon {
     color: rgb(0, 0, 0); /* Ensure the icon is visible */
 }
-
 .navbar{
     height: 5rem;
     background-color: whitesmoke;
@@ -37,27 +35,12 @@ body{
     color: black !important;
 }
 
-/* Custom styles for dropdown menu */
-/* .collapse.show {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    position: absolute;
-    z-index: 1000;
-    right: 0;
-} */
-
-
-
-
-
 /* footer */
 
 .f-info{
     text-align: center;
     height: 8rem;
-    background-color: whitesmoke;
+    background-color: #ebebeb;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -73,38 +56,22 @@ body{
     align-items: center;
     justify-content: center;
 }
+.f-social-info i {
+    margin: 0 10px;
+}
 .f-social-info i{
     font-size: 1.5rem;
     margin-right: 1rem;
-    /* color: #222222; */
-}
-
-.f-info a{
-    text-decoration: none !important;
     color: #222222 !important;
 }
-/* .f-info-links a :hover{
-    text-decoration: underline;
-} */
-/* footer{
-    position: static;
-    bottom: 0;
-} */
 
-/* .container{
-    
-    min-height:76vh;
-    min-height: 80vh;
-    margin-left: 10px !important;
-} */
-
-/* .f-social-info{
-    color: #222222;
+.f-info-links a{
+    text-decoration: none;
+    color: #222222 !important;
 }
-.insta{
-    color: #222222;
-} */
-
+.f-info-links a :hover{
+    text-decoration: underline;
+}
 
 
 
@@ -147,85 +114,45 @@ body{
 }
 
 
-
-
-
-
-/* Dark Mode Styles
-[data-bs-theme="dark"] {
-    background-color: #343a40 !important;
-    color: white !important; 
-}
-
-[data-bs-theme="dark"] .btn-primary {
-    background-color: #007bff !important;
-    border-color: #007bff !important;
-} */
-
-
-
-
+/* DARK THEME CSS */
 
 /* Light Mode Styles */
-[data-bs-theme="light"] .f-info a,
 [data-bs-theme="light"] .navbar, 
 [data-bs-theme="light"] .navbar-nav .nav-link {
     color: #000; /* Dark text for light mode */
 }
-
 
 /* Dark Mode Styles */
 [data-bs-theme="dark"] {
     background-color: #343a40; /* Darker background */
     color: white; /* Light text */
 }
-
 [data-bs-theme="dark"] .navbar {
     background-color: #343a40; /* Darker background for navbar */
 }
-
-
-[data-bs-theme="dark"] .f-info  {
-    background-color: #343a40 !important; /* Darker background for navbar */
-    color: white;
-}
-
 [data-bs-theme="dark"] .navbar-nav .nav-link{
     color: white !important; /* Light text for nav links */
-}
-
-[data-bs-theme="dark"] .navbar-brand {
-    color: white; /* Light text for brand */
 }
 
 [data-bs-theme="dark"] #dark-mode-icon {
     color: white; /* Ensure the icon is visible */
 }
-[data-bs-theme='dark'].f-social-info i{
-    color: white !important;
+
+
+/* Dark Mode for Footer */
+[data-bs-theme="dark"] .f-info {
+    background-color: #343a40 !important; /* Darker background for footer */
+    color: white !important; /* Light text for footer */
 }
-
-[data-bs-theme='dark'].f.info a{
-    color: white !important;
+[data-bs-theme="dark"] .f-social-info i {
+    color: white !important; /* Light text for social icons */
 }
-
-
-
-.navbar-toggler {
-    /* color: #000; */
-    background-color: #000;
-    border-color: rgba(112, 111, 111, 0.158);
+[data-bs-theme="dark"] .f-info-links a {
+    color: white !important; /* Light text for info links */
 }
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+[data-bs-theme="dark"] .f-brand-info {
+    color: white !important; /* Light text for info links */
 }
-
-
-
-
-
-
 
 /* Custom styles for dropdown menu */
 .collapse.show {
@@ -238,29 +165,7 @@ body{
     top: 5rem;
     right: 0;
 }
-
-
 [data-bs-theme="dark"] .collapse.show {
     background-color: #444;
     border-color: #555;
-}
-
-/* .navbar-toggler::after {
-    content: '\f06e'; FontAwesome eye icon code
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: #000;
-    padding-left: 5px;
-} */
-
-/* Style for dark mode icon inside navbar-toggler */
-[data-bs-theme="dark"] .navbar-toggler::after {
-    color: #fff;
-}
-
-/* Media query to position the toggler button */
-@media (max-width: 767.98px) {
-    .navbar-toggler {
-        margin-left: auto;
-    }
 }
