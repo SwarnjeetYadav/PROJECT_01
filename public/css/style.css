@@ -22,7 +22,7 @@ body{
 
 .navbar{
     height: 5rem;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 .fa-angellist{
@@ -57,7 +57,7 @@ body{
 .f-info{
     text-align: center;
     height: 8rem;
-    background-color: white;
+    background-color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -76,16 +76,16 @@ body{
 .f-social-info i{
     font-size: 1.5rem;
     margin-right: 1rem;
-    color: #222222;
+    /* color: #222222; */
 }
 
-.f-info-links a{
-    text-decoration: none;
-    color: #222222;
+.f-info a{
+    text-decoration: none !important;
+    color: #222222 !important;
 }
-.f-info-links a :hover{
+/* .f-info-links a :hover{
     text-decoration: underline;
-}
+} */
 /* footer{
     position: static;
     bottom: 0;
@@ -167,6 +167,7 @@ body{
 
 
 /* Light Mode Styles */
+[data-bs-theme="light"] .f-info a,
 [data-bs-theme="light"] .navbar, 
 [data-bs-theme="light"] .navbar-nav .nav-link {
     color: #000; /* Dark text for light mode */
@@ -184,8 +185,9 @@ body{
 }
 
 
-[data-bs-theme="dark"] .f-info {
+[data-bs-theme="dark"] .f-info  {
     background-color: #343a40 !important; /* Darker background for navbar */
+    color: white;
 }
 
 [data-bs-theme="dark"] .navbar-nav .nav-link{
@@ -199,8 +201,12 @@ body{
 [data-bs-theme="dark"] #dark-mode-icon {
     color: white; /* Ensure the icon is visible */
 }
-[data-bs-theme='dark'].-social-info{
-    color: white;
+[data-bs-theme='dark'].f-social-info i{
+    color: white !important;
+}
+
+[data-bs-theme='dark'].f.info a{
+    color: white !important;
 }
 
 
